@@ -1,0 +1,35 @@
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "src"))
+
+import pytest
+from faithfulness import split_claims, parse_verdict, ParseError
+
+CONTEXT = ("Gecikmə üzrə qayda: 30 gündən çox gecikən kredit Stage 2-yə keçirilir. "
+           "Kredit məbləği 10 000 AZN-dən çox olduqda təminat tələb olunur. "
+           "Müraciət onlayn və ya filialda edilə bilər.")
+ANSWER = ("30 gündən çox gecikən kredit Stage 2-yə keçirilir. "
+          "10 000 AZN-dən çox məbləğdə təminat tələb olunur. "
+          "Müraciət yalnız onlayn edilə bilər. "
+          "Kredit 90 gündən sonra default sayılır.")
+
+
+def test_split_claims_gives_four_claims():
+    assert len(split_claims(ANSWER)) == 4
+
+
+def test_split_claims_keeps_decimals_together():
+    assert split_claims("Faiz 3.5 faizdir.") == ["Faiz 3.5 faizdir."]
+
+
+@pytest.mark.parametrize("raw,expected", [
+    ("SUPPORTED", "SUPPORTED"),
+    ("  contradicted. ", "CONTRADICTED"),
+    ("UNSUPPORTED", "UNSUPPORTED"),
+])
+def test_parse_verdict_accepts_labels(raw, expected):
+    assert parse_verdict(raw) == expected
+
+
+def test_parse_verdict_rejects_free_text():
+    with pytest.raises(ParseError):
+        parse_verdict("Mən düşünürəm ki, SUPPORTED ola bilər")
