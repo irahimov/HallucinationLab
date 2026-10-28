@@ -34,6 +34,9 @@ def split_claims(answer: str) -> list[str]:
 
 
 def parse_verdict(raw: str) -> str:
+    # qwen3 düşüncə mətnini cavaba yazır: cavab yalnız </think>-dən sonradır
+    if "</think>" in raw:
+        raw = raw.rsplit("</think>", 1)[1]
     text = raw.strip().upper().strip(".!* ")
     if text in LABELS:
         return text

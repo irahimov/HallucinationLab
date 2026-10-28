@@ -33,3 +33,13 @@ def test_parse_verdict_accepts_labels(raw, expected):
 def test_parse_verdict_rejects_free_text():
     with pytest.raises(ParseError):
         parse_verdict("Mən düşünürəm ki, SUPPORTED ola bilər")
+
+
+def test_parse_verdict_strips_thinking_block():
+    raw = "Claim is stated in the context directly.\n</think>\n\nSUPPORTED"
+    assert parse_verdict(raw) == "SUPPORTED"
+
+
+def test_parse_verdict_rejects_thinking_without_answer():
+    with pytest.raises(ParseError):
+        parse_verdict("some reasoning only</think>")
