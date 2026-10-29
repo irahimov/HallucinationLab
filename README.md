@@ -42,3 +42,19 @@ Interpretation: the judge separates SUPPORTED from CONTRADICTED well on these ex
 
 ## Not in scope
 Not a production faithfulness system. No NLI model comparison yet. No RAGAS comparison yet.
+
+## Holdout 2 (20 medium-length claims)
+
+Labels were written by the author before the judge was run and committed first. The judge was then run once.
+
+| Metric | Value |
+|---|---|
+| Strict agreement | 0.30 (6/20) |
+| Cohen's kappa | -0.11 |
+| Parse errors | 0 |
+
+On a re-read of the 14 disagreements, the context supports the judge's verdict in every case (see `results/holdout2_review.md`). This suggests the labels are at fault, not the judge. However, that re-read was done after seeing the judge output and by the author alone, so it is not independent. The headline number stays at 0.30 until a blind second annotator has relabelled the set.
+
+Process note: an earlier run on `holdout.jsonl` was started with unlabelled rows. Its output was discarded and not reported. A guard now refuses to run the judge on unlabelled rows.
+
+Open items: s18 and s28 in the first set are still unresolved. The first set (0.80) and holdout 2 (0.30) differ a lot, so the judge's reliability is not yet established.

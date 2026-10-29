@@ -1,0 +1,37 @@
+{'id': 'm01', 'human': 'SUPPORTED', 'judge': 'CONTRADICTED', 'seconds': 20.4}
+{'id': 'm02', 'human': 'SUPPORTED', 'judge': 'SUPPORTED', 'seconds': 20.9}
+{'id': 'm03', 'human': 'CONTRADICTED', 'judge': 'CONTRADICTED', 'seconds': 19.9}
+{'id': 'm04', 'human': 'SUPPORTED', 'judge': 'SUPPORTED', 'seconds': 29.8}
+{'id': 'm05', 'human': 'SUPPORTED', 'judge': 'CONTRADICTED', 'seconds': 15.9}
+{'id': 'm06', 'human': 'SUPPORTED', 'judge': 'SUPPORTED', 'seconds': 18.2}
+{'id': 'm07', 'human': 'CONTRADICTED', 'judge': 'SUPPORTED', 'seconds': 55.4}
+{'id': 'm08', 'human': 'SUPPORTED', 'judge': 'CONTRADICTED', 'seconds': 19.2}
+{'id': 'm09', 'human': 'UNSUPPORTED', 'judge': 'SUPPORTED', 'seconds': 50.3}
+{'id': 'm10', 'human': 'UNSUPPORTED', 'judge': 'SUPPORTED', 'seconds': 24.1}
+{'id': 'm11', 'human': 'SUPPORTED', 'judge': 'CONTRADICTED', 'seconds': 27.4}
+{'id': 'm12', 'human': 'CONTRADICTED', 'judge': 'SUPPORTED', 'seconds': 34.3}
+{'id': 'm13', 'human': 'UNSUPPORTED', 'judge': 'SUPPORTED', 'seconds': 28.6}
+{'id': 'm14', 'human': 'SUPPORTED', 'judge': 'CONTRADICTED', 'seconds': 29.2}
+{'id': 'm15', 'human': 'CONTRADICTED', 'judge': 'SUPPORTED', 'seconds': 20.7}
+{'id': 'm16', 'human': 'UNSUPPORTED', 'judge': 'SUPPORTED', 'seconds': 24.7}
+{'id': 'm17', 'human': 'CONTRADICTED', 'judge': 'CONTRADICTED', 'seconds': 14.9}
+{'id': 'm18', 'human': 'UNSUPPORTED', 'judge': 'SUPPORTED', 'seconds': 40.2}
+{'id': 'm19', 'human': 'SUPPORTED', 'judge': 'SUPPORTED', 'seconds': 41.5}
+{'id': 'm20', 'human': 'UNSUPPORTED', 'judge': 'CONTRADICTED', 'seconds': 22.4}
+{
+  "n_total": 20,
+  "n_compared": 20,
+  "parse_errors": 0,
+  "timeouts_or_conn": 0,
+  "agreement": 0.3,
+  "kappa": -0.111,
+  "avg_seconds": 27.9,
+  "confusion_human_vs_judge": {
+    "CONTRADICTED->CONTRADICTED": 2,
+    "CONTRADICTED->SUPPORTED": 3,
+    "SUPPORTED->CONTRADICTED": 5,
+    "SUPPORTED->SUPPORTED": 4,
+    "UNSUPPORTED->CONTRADICTED": 1,
+    "UNSUPPORTED->SUPPORTED": 5
+  }
+}
