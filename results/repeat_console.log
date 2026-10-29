@@ -1,0 +1,6 @@
+s01 {'label': 'SUPPORTED', 'verdicts': {'SUPPORTED': 5}, 'stable': True}
+s02 {'label': 'CONTRADICTED', 'verdicts': {'CONTRADICTED': 5}, 'stable': True}
+s03 {'label': 'UNSUPPORTED', 'verdicts': {'UNSUPPORTED': 5}, 'stable': True}
+s12 {'label': 'CONTRADICTED', 'verdicts': {'CONTRADICTED': 5}, 'stable': True}
+s20 {'label': 'SUPPORTED', 'verdicts': {'SUPPORTED': 5}, 'stable': True}
+{"stable_claims": 5, "of": 5, "runs_per_claim": 5}
