@@ -1,0 +1,12 @@
+{
+  "bge-m3": {
+    "n_variants": 9,
+    "top1_same_as_original": 1.0,
+    "variant_hit@1": 1.0
+  },
+  "nomic-embed-text": {
+    "n_variants": 9,
+    "top1_same_as_original": 0.778,
+    "variant_hit@1": 0.889
+  }
+}
