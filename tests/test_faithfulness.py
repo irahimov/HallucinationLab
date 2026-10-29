@@ -43,3 +43,16 @@ def test_parse_verdict_strips_thinking_block():
 def test_parse_verdict_rejects_thinking_without_answer():
     with pytest.raises(ParseError):
         parse_verdict("some reasoning only</think>")
+
+
+from judge_eval import cohen_kappa
+
+
+def test_kappa_perfect_agreement_is_one():
+    assert cohen_kappa(["SUPPORTED", "CONTRADICTED"], ["SUPPORTED", "CONTRADICTED"]) == 1.0
+
+
+def test_kappa_chance_level_is_zero():
+    a = ["SUPPORTED", "SUPPORTED", "CONTRADICTED", "CONTRADICTED"]
+    b = ["SUPPORTED", "CONTRADICTED", "SUPPORTED", "CONTRADICTED"]
+    assert abs(cohen_kappa(a, b)) < 1e-9
