@@ -1,0 +1,11 @@
+{'id': 'u01', 'refused': True, 'answer': 'Bu sualın cavabı verilən mətndə yoxdur.'}
+{'id': 'u02', 'refused': True, 'answer': 'Bu sualın cavabı verilən mətndə yoxdur.'}
+{'id': 'u03', 'refused': True, 'answer': 'Bu sualın cavabı verilən mətndə yoxdur.'}
+{'id': 'u04', 'refused': True, 'answer': 'Bu sualın cavabı verilən mətndə yoxdur.'}
+{'id': 'u05', 'refused': False, 'answer': '14%'}
+{'id': 'u06', 'refused': True, 'answer': 'Bu sualın cavabı verilən mətndə yoxdur.'}
+{'id': 'u07', 'refused': True, 'answer': 'Bu sualın cavabı verilən mətndə yoxdur.'}
+{'id': 'u08', 'refused': True, 'answer': 'Bu sualın cavabı verilən mətndə yoxdur.'}
+{'id': 'u09', 'refused': True, 'answer': 'Bu sualın cavabı verilən mətndə yoxdur.'}
+{'id': 'u10', 'refused': True, 'answer': 'Bu sualın cavabı verilən mətndə yoxdur.'}
+{"n": 10, "refusal_rate": 0.9}
