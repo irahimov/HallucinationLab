@@ -22,6 +22,9 @@ def cohen_kappa(a: list[str], b: list[str]) -> float:
 
 def run(labels_path: str, out_path: str) -> dict:
     rows = [json.loads(l) for l in open(labels_path, encoding="utf-8") if l.strip()]
+    bad = [r.get("id") for r in rows if r.get("label") not in LABELS]
+    if bad:
+        raise SystemExit(f"Etiketsiz və ya yanlış etiketli nümunələr var (ilk 5): {bad[:5]}. Hakim işlədilmədi.")
     records = []
     with open(out_path, "w", encoding="utf-8") as out:
         for r in rows:
