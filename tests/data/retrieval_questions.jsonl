@@ -1,0 +1,30 @@
+{"id": "r01", "question": "Həyat sığortası paketində neçə variant var?", "key": "Həyat sığortası paketi"}
+{"id": "r02", "question": "Premium paket hansı ödəniş üsulu ilə təqdim olunur?", "key": "Premium paket yalnız"}
+{"id": "r03", "question": "Xaricdə kartla ödənişdə konversiya haqqı nə qədərdir?", "key": "konversiya haqqı"}
+{"id": "r04", "question": "Konversiya haqqı hansı ödənişlərdən tutulur?", "key": "yalnız onlayn"}
+{"id": "r05", "question": "Şikayəti nə qədər müddətdə təqdim etmək lazımdır?", "key": "60 gün"}
+{"id": "r06", "question": "Bank şikayəti neçə iş günü ərzində araşdırır?", "key": "10 iş günü"}
+{"id": "r07", "question": "Bonus xalları necə qazanılır?", "key": "1000 AZN"}
+{"id": "r08", "question": "Bonus xalları nağd pula çevrilə bilərmi?", "key": "nağd pula"}
+{"id": "r09", "question": "Bank müştəri məlumatlarını nə qədər saxlayır?", "key": "5 il"}
+{"id": "r10", "question": "Kredit müraciətini neçə iş günü ərzində ləğv etmək olar?", "key": "3 iş günü"}
+{"id": "r11", "question": "Kredit müraciəti ləğv edildikdə komissiya tutulurmu?", "key": "komissiya tutulmur"}
+{"id": "r12", "question": "Depozit hesabı neçə ay müddətinə açılır?", "key": "12 ay"}
+{"id": "r13", "question": "Müştəri şikayəti hansı formada verilə bilər?", "key": "onlayn formada"}
+{"id": "r14", "question": "Kart itdikdə nə etmək lazımdır?", "key": "əlaqə mərkəzinə"}
+{"id": "r15", "question": "Gecikmə halında cərimə tətbiq olunurmu?", "key": "Gecikmə halında cərimə"}
+{"id": "r16", "question": "Kredit faizi illik neçə faizdir?", "key": "14%"}
+{"id": "r17", "question": "Depozit müddəti bitməmiş çıxarış edildikdə faiz necə olur?", "key": "Müddət bitməmiş"}
+{"id": "r18", "question": "Kredit ödənişləri hansı gündə edilir?", "key": "5-də"}
+{"id": "r19", "question": "İki faktorlu autentifikasiya hansı xidmətdə tələb olunur?", "key": "Mobil bankçılıqda"}
+{"id": "r20", "question": "Parol neçə dəfə səhv daxil edilsə hesab bloklanır?", "key": "üç dəfə"}
+{"id": "r21", "question": "Kart əməliyyatları üçün gündəlik limit nə qədərdir?", "key": "2 000 AZN"}
+{"id": "r22", "question": "Kart limitini necə artırmaq olar?", "key": "müştərinin müraciəti ilə"}
+{"id": "r23", "question": "Şəxsi məlumatlar hansı hallarda ötürülür?", "key": "qanunla icazə verilən hallarda"}
+{"id": "r24", "question": "Limiti artırmaq üçün nə etmək lazımdır?", "key": "əlavə sənəd yükləməlidir"}
+{"id": "r25", "question": "Limit hesabı açıldıqdan sonra gündəlik limit nə qədərdir?", "key": "500 AZN"}
+{"id": "r26", "question": "Bonus xalları neçə ildə bir yenilənir?", "key": "ildə bir dəfə yenilənir"}
+{"id": "r27", "question": "Xaricdə ödənişdə məzənnə necə hesablanır?", "key": "rəsmi kursla"}
+{"id": "r28", "question": "Mürəkkəb hallarda araşdırma neçə günə uzana bilər?", "key": "30 günə qədər"}
+{"id": "r29", "question": "Müştəri məlumatlarının silinməsini istəyə bilərmi?", "key": "məlumatlarının silinməsini tələb"}
+{"id": "r30", "question": "Sığorta haqqı necə ödənilə bilər?", "key": "Sığorta haqqı ödənişi"}
