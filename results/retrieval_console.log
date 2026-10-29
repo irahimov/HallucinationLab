@@ -1,0 +1,18 @@
+{
+  "bge-m3": {
+    "model": "bge-m3",
+    "n_chunks": 17,
+    "n": 30,
+    "hit@1": 1.0,
+    "hit@3": 1.0,
+    "mrr": 1.0
+  },
+  "nomic-embed-text": {
+    "model": "nomic-embed-text",
+    "n_chunks": 17,
+    "n": 30,
+    "hit@1": 0.867,
+    "hit@3": 0.967,
+    "mrr": 0.925
+  }
+}
