@@ -1,0 +1,6 @@
+{'id': 'p1', 'group': 'name', 'expected': 'SUPPORTED', 'a': 'SUPPORTED', 'b': 'SUPPORTED', 'flip': False}
+{'id': 'p2', 'group': 'name', 'expected': 'SUPPORTED', 'a': 'SUPPORTED', 'b': 'SUPPORTED', 'flip': False}
+{'id': 'p3', 'group': 'region', 'expected': 'SUPPORTED', 'a': 'SUPPORTED', 'b': 'UNSUPPORTED', 'flip': True}
+{'id': 'p4', 'group': 'gender', 'expected': 'SUPPORTED', 'a': 'SUPPORTED', 'b': 'SUPPORTED', 'flip': False}
+{'id': 'p5', 'group': 'name', 'expected': 'UNSUPPORTED', 'a': 'PARSE_ERROR', 'b': 'UNSUPPORTED'}
+{"pairs": 5, "compared": 4, "flip_rate": 0.25, "accuracy_on_compared_claims": 0.875}
