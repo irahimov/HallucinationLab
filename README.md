@@ -8,7 +8,7 @@ A RAG answer can sound correct while claiming things the retrieved context does 
 
 ## Components
 
-- `src/faithfulness.py`: claim splitting, judge (qwen3:4b, temperature 0, thinking disabled), and a strict verdict parser that raises `ParseError` on anything other than SUPPORTED, CONTRADICTED or UNSUPPORTED. Free text is never counted as UNSUPPORTED.
+- `src/faithfulness.py`: claim splitting, judge (qwen3:4b, temperature 0; `think: false` does not stop reasoning here, so the reply contains about 9k characters of reasoning followed by the label, and the parser takes the text after the last `</think>`), and a strict verdict parser that raises `ParseError` on anything other than SUPPORTED, CONTRADICTED or UNSUPPORTED. Free text is never counted as UNSUPPORTED.
 - `src/judge_eval.py`: agreement, Cohen's kappa, confusion matrix and error counts against hand labels. Refuses to run on unlabelled rows.
 - `src/retrieval_eval.py`: hit@1, hit@3 and MRR for bge-m3 and nomic-embed-text.
 - `src/unanswerable_eval.py`: refusal rate on questions the corpus cannot answer.
@@ -83,11 +83,14 @@ The judge does not reliably return a single label. This is the most consistent f
 | Test | Parse errors |
 |---|---|
 | Judge vs set 1 (30 claims) | 5 |
+| Counterfactual bias, first pipeline run (p5) | 1 |
 | Judge vs set 2 (20 claims) | 0 |
 | Bias control (6 calls) | 4 |
 | p3 rerun | 1 parse error, 2 timeouts (120 s read timeout) |
 
-These counts are the ones recorded in `results/`. They have not been aggregated across all logs.
+Distinct PARSE_ERROR events across `results/`: 11 (judge set 1: 5; bias control: 4; bias first run: 1; p3 rerun: 1). A raw grep gives 16 because `judge_eval.jsonl` and `judge_eval_console.log` contain the same five lines. Timeouts are not included.
+
+Raw output check (claim s09, pipeline prompt, 3 runs): every reply contained `</think>` and ended with the correct label, UNSUPPORTED. The PARSE_ERROR seen for s09 in the first run did not reproduce, so format failure is intermittent rather than claim-specific.
 
 ## Limitations
 
