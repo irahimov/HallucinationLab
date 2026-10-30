@@ -1,0 +1,8 @@
+{
+  "labels": "tests/data/judge_labels_v2.jsonl",
+  "n": 30,
+  "strict_agreement": 0.833,
+  "parsed_n": 25,
+  "parsed_agreement": 1.0,
+  "kappa_parsed": 1.0
+}
