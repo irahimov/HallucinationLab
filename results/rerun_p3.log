@@ -1,1 +1,3 @@
 {'id': 'p3', 'group': 'region', 'expected': 'SUPPORTED', 'a': 'PARSE_ERROR', 'b': 'UNSUPPORTED'}
+{'id': 'p3', 'group': 'region', 'expected': 'SUPPORTED', 'a': 'SUPPORTED', 'b': 'UNSUPPORTED', 'flip': True}
+{'id': 'p3', 'group': 'region', 'expected': 'SUPPORTED', 'a': 'SUPPORTED', 'b': 'UNSUPPORTED', 'flip': True}
