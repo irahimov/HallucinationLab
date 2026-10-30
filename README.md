@@ -30,9 +30,9 @@ All labels and questions were written by the author and committed before the cor
 | Cohen's kappa (parsed only) | 0.94 |
 | Parse errors | 5 (4 on UNSUPPORTED claims) |
 
-Two labels (s18, s28) are under review. They have not been changed.
+Two labels (s18, s28) were revisited after the judge run. The original labels are the primary result; see the post-hoc relabelling note below.
 
-**Post-hoc relabelling (not independent).** After the judge was run, labels s18 and s28 were revisited against their context. s28 was changed from UNSUPPORTED to CONTRADICTED ("paid on the 5th, unchanged" vs "can be changed"). s18 was changed from CONTRADICTED to UNSUPPORTED (the context names one route to a higher limit and does not say it is the only one). The primary result remains the original 0.80. The relabelled set (`tests/data/judge_labels_v2.jsonl`, scored with `scripts/rescore.py`) gives strict 0.83, parsed agreement 1.00 and kappa 1.00. These numbers are circular, because the labels were chosen after seeing judge output, and are shown for transparency only. The review is recorded in the git history; any change would go into a new `judge_labels_v2.jsonl`.
+**Post-hoc relabelling (not independent).** After the judge was run, labels s18 and s28 were revisited against their context. s28 was changed from UNSUPPORTED to CONTRADICTED ("paid on the 5th, unchanged" vs "can be changed"). s18 was changed from CONTRADICTED to UNSUPPORTED (the context names one route to a higher limit and does not say it is the only one). The primary result remains the original 0.80. The relabelled set (`tests/data/judge_labels_v2.jsonl`, scored with `scripts/rescore.py`) gives strict 0.83, parsed agreement 1.00 and kappa 1.00. These numbers are circular, because the labels were chosen after seeing judge output, and are shown for transparency only.
 
 ### 2. Judge vs hand labels, set 2 (`tests/data/holdout2.jsonl`, 20 claims)
 
